@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch case</title>
+    <script type="text/javascript">
+    	var a=[12,-3,"abc",7.55];
+    	for(i=0;i<=a.length;i++){
+    		switch(typeof a[i]){
+    		case "number":
+    			if(Number.isInteger(a[i])){
+    				if(a[i]<0){
+    					a[i]=a[i]*-1;
+    					console.log("Negative no after converting:",+a[i])
+    				}
+    				else{
+    					console.log("Square of positive number:" +(a[i]*a[i]));
+    				}
+    			}
+    			else{
+    				console.log("float value after multiplying by 10:" +a[i]*10);
+    			}	
+    			break; 
+    		case "string":
+    			console.log("string:",a[i]);
+    			break;	
+    		}	
+    	}	
+  
+    </script>	
