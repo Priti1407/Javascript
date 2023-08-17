@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <script type="text/javascript">
+    	function fact(n){
+    		if(n==0){
+    			return 1;
+    		}
+    		else{
+    			return n*fact(n-1);
+    		}
+    	}
+    	var n=prompt("Enter any integer number:");
+    	if(n>=0){
+    		a=fact(n);
+    	}
+    	console.log(a);
+    </script>	
+    
