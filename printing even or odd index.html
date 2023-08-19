@@ -1,0 +1,21 @@
+<!DOCTYPE.html>
+<head>
+	<title>Printing odd or even numbers at Index</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a=84379103;
+		var even=[];
+		var odd=[];
+		a=a.toString();
+		for(let i=0;i<a.length;i++){
+			if(parseInt(a[i])%2==0){
+				even.push(a[i]);
+			}else{
+				odd.push(a[i]);
+			}
+		}
+		console.log("The even numbers are:"+even);
+		console.log("The odd numbers are:"+odd);
+	</script>
+</body>	
