@@ -1,0 +1,37 @@
+<!DOCTYPE.html>
+<head>
+	<title>Prime number using function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function isPrime(number) {
+  			if (number <= 1) {
+    			return false;
+  			}
+  			if (number <= 3) {
+   				return true;
+ 			}
+
+  			if (number % 2 === 0 || number % 3 === 0) {
+    			return false;
+  			}
+
+  			for (let i = 5; i * i <= number; i += 6) {
+    			if (number % i === 0 || number % (i + 2) === 0) {
+      				return false;
+    		}
+  		}
+
+  			return true;
+		}
+
+		const numberToCheck = parseInt(prompt("Enter the no:"))
+		if (isPrime(numberToCheck)) {
+  			console.log(`${numberToCheck} is a prime number.`);
+		} else {
+  			console.log(`${numberToCheck} is not a prime number.`);
+}
+
+	</script>
+</body>	
