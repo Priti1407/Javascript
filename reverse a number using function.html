@@ -1,0 +1,21 @@
+<!DOCTYPE.html>
+<head>
+	<title>Reverse number using function</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function reverseNumber(n) {
+        let reverse = 0;
+        let remainder;
+		while (n > 0) {
+        remainder = n % 10;
+        reverse = reverse * 10 + remainder;
+        n = parseInt(n / 10); 
+    	}
+		return reverse;
+	}
+	var n = prompt("Enter the number:");
+	var reversed = reverseNumber(n);
+	console.log(reversed); 
+	</script>
+</body>	
