@@ -4,21 +4,19 @@
 </head>
 <body>
 	<script type="text/javascript">
-		function reverseNumber(n) {
-        let reverse = 0;
-        let remainder;
-		while (n > 0) {
-        remainder = n % 10;
-        reverse = reverse * 10 + remainder;
-        n = parseInt(n / 10); // Use Math.floor to ensure integer division
+	function reverseNumber(n) {
+           let reverse = 0;
+           let remainder;
+	     while (n > 0) {
+             remainder = n % 10;
+             reverse = reverse * 10 + remainder;
+             n = parseInt(n / 10); 
     }
 
     return reverse;
 }
-
-// Example usage:
-const n = 352;
-const reversed = reverseNumber(n);
-console.log(reversed); // This will print the reversed number, which is 253
-	</script>
+var n = prompt("Enter the no:);
+var reversed = reverseNumber(n);
+console.log(reversed); 
+</script>
 </body>	
